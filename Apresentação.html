@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ddd;
+            font-family: 'Roboto';
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .nav_abas {
+            width: 600px;
+            height: 400px;
+            margin: 100px auto;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .nav_abas ul {
+            list-style: none;
+        }
+
+        .nav_abas ul li {
+            float: left;
+        }
+
+        .nav_abas label {
+            width: 150px;
+            padding: 25px;
+            background-color: #363b48;
+            display: block;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .abas:checked~label {
+            background-color: #e54e43
+        }
+
+        .abas {
+            display: none;
+        }
+
+        .conteudo {
+            border-top: 5px solid #e54e43;
+            background-color: #fff;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            height: 320px;
+            width: 600px;
+            left: 0;
+        }
+
+        .conteudo article {
+            padding: 10px;
+        }
+
+        .abas:checked~.conteudo {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav_abas">
+        <ul>
+            <li>
+                <input type="radio" name="abas" class="abas" id="aba1">
+                <label for="aba1">Introdução</label>
+                <div class="conteudo">
+                    <article>
+                        Meu nome é Anthony Schalinski, eu tenho 17 anos, e fiquei muito interessado em programação
+                        quando conheci um
+                        amigo programador, eu tenho interesse em muitas partes da programação, mas principalmente em
+                        Java Script,
+                        fiz um pequeno curso na internet de Java Script, mas nada muito aprofundado.
+                    </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="abas" class="abas" id="aba2">
+                <label for="aba2">Interesse</label>
+                <div class="conteudo">
+                    <article>
+                        Eu sempre quis algum curso que eu pudesse fazer pelo computador, já que sempre tive esse
+                        interesse, eu
+                        estava meio perdido, mas quando meus amigos falaram que iam fazer Engenharia de Software eu
+                        gostei da ideia.
+                    </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="abas" class="abas" id="aba3">
+                <label for="aba3">Expectativa</label>
+                <div class="conteudo">
+                    <article>
+                        Minha expectativa para o futuro é começar a trabalhar durante a faculdade e quando acabar o
+                        curso eu quero
+                        ir para outro país sendo programador.
+                    </article>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
